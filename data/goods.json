@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "速开双层自动帐篷",
+    "category": "帐篷",
+    "price": 199,
+    "stock": 26,
+    "unit": "顶",
+    "retailPrice": 299,
+    "tag": "热销",
+    "desc": "3 秒撑开，防雨防晒，说走就走"
+  },
+  {
+    "id": 2,
+    "name": "六角天幕遮阳帐篷",
+    "category": "帐篷",
+    "price": 259,
+    "stock": 18,
+    "unit": "顶",
+    "retailPrice": 369,
+    "tag": "新品",
+    "desc": "加宽遮阳，六人围坐不嫌挤"
+  },
+  {
+    "id": 3,
+    "name": "大空间家庭帐篷",
+    "category": "帐篷",
+    "price": 399,
+    "stock": 9,
+    "unit": "顶",
+    "retailPrice": 559,
+    "tag": "",
+    "desc": "两室一厅，全家露营够住"
+  },
+  {
+    "id": 4,
+    "name": "加厚保暖睡袋",
+    "category": "睡袋",
+    "price": 69,
+    "stock": 48,
+    "unit": "个",
+    "retailPrice": 99,
+    "tag": "热销",
+    "desc": "5℃ 保暖，可拼接双人"
+  },
+  {
+    "id": 5,
+    "name": "轻量棉睡袋",
+    "category": "睡袋",
+    "price": 89,
+    "stock": 30,
+    "unit": "个",
+    "retailPrice": 129,
+    "tag": "",
+    "desc": "轻装徒步，收纳仅巴掌大"
+  },
+  {
+    "id": 6,
+    "name": "双人拼接睡袋",
+    "category": "睡袋",
+    "price": 129,
+    "stock": 22,
+    "unit": "个",
+    "retailPrice": 189,
+    "tag": "特价",
+    "desc": "左右可拼，情侣露营首选"
+  },
+  {
+    "id": 7,
+    "name": "卡式炉锅具套装",
+    "category": "炊具",
+    "price": 129,
+    "stock": 24,
+    "unit": "套",
+    "retailPrice": 189,
+    "tag": "热销",
+    "desc": "一炉一锅，煮茶做饭全包"
+  },
+  {
+    "id": 8,
+    "name": "户外便携气罐",
+    "category": "炊具",
+    "price": 15,
+    "stock": 160,
+    "unit": "罐",
+    "retailPrice": 22,
+    "tag": "",
+    "desc": "通用卡式接口，燃烧稳定"
+  },
+  {
+    "id": 9,
+    "name": "不锈钢折叠餐具",
+    "category": "炊具",
+    "price": 39,
+    "stock": 56,
+    "unit": "套",
+    "retailPrice": 59,
+    "tag": "新品",
+    "desc": "刀叉勺筷，一套收齐"
+  },
+  {
+    "id": 10,
+    "name": "折叠蛋卷桌",
+    "category": "桌椅",
+    "price": 89,
+    "stock": 36,
+    "unit": "张",
+    "retailPrice": 129,
+    "tag": "热销",
+    "desc": "一卷即收，桌面够摆一桌菜"
+  },
+  {
+    "id": 11,
+    "name": "克米特户外椅",
+    "category": "桌椅",
+    "price": 119,
+    "stock": 28,
+    "unit": "个",
+    "retailPrice": 169,
+    "tag": "新品",
+    "desc": "加宽坐面，久坐不硌腰"
+  },
+  {
+    "id": 12,
+    "name": "铝合金折叠桌",
+    "category": "桌椅",
+    "price": 149,
+    "stock": 16,
+    "unit": "张",
+    "retailPrice": 219,
+    "tag": "",
+    "desc": "承重 50kg，四人吃饭不挤"
+  },
+  {
+    "id": 13,
+    "name": "露营 LED 灯串",
+    "category": "灯具",
+    "price": 29,
+    "stock": 120,
+    "unit": "串",
+    "retailPrice": 45,
+    "tag": "热销",
+    "desc": "10 米暖光，氛围直接拉满"
+  },
+  {
+    "id": 14,
+    "name": "充电式营地灯",
+    "category": "灯具",
+    "price": 59,
+    "stock": 42,
+    "unit": "个",
+    "retailPrice": 89,
+    "tag": "",
+    "desc": "三档调光，满电能亮一整晚"
+  },
+  {
+    "id": 15,
+    "name": "太阳能氛围地灯",
+    "category": "灯具",
+    "price": 45,
+    "stock": 0,
+    "unit": "个",
+    "retailPrice": 65,
+    "tag": "特价",
+    "desc": "白天充电，入夜自动亮"
+  },
+  {
+    "id": 16,
+    "name": "折叠收纳箱",
+    "category": "配件收纳",
+    "price": 39,
+    "stock": 50,
+    "unit": "个",
+    "retailPrice": 59,
+    "tag": "热销",
+    "desc": "55L 大容量，不用时折平"
+  },
+  {
+    "id": 17,
+    "name": "防潮野餐垫",
+    "category": "配件收纳",
+    "price": 45,
+    "stock": 60,
+    "unit": "张",
+    "retailPrice": 65,
+    "tag": "",
+    "desc": "加厚防潮，草地随便躺"
+  },
+  {
+    "id": 18,
+    "name": "户外工具收纳包",
+    "category": "配件收纳",
+    "price": 25,
+    "stock": 34,
+    "unit": "个",
+    "retailPrice": 39,
+    "tag": "新品",
+    "desc": "炉具餐具一包拎走"
+  }
+]

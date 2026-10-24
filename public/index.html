@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="露营批发部：菜市场大字报风的露营装备批发选购工具，买越多折扣越大。">
+  <title>露营批发部 · 走过路过不要错过</title>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span class="topbar-note">菜市场直营 · 第 001 号摊位</span>
+      <div class="topbar-links">
+        <span class="topbar-hint">鼠标划过价签试试手感</span>
+        <a class="topbar-btn ripple-target magnetic" href="admin.html">后台账房</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="stamp-today" aria-hidden="true">
+        <span class="stamp-main">今日开市</span>
+        <span class="stamp-sub">批发部</span>
+      </div>
+      <h1 class="banner-title">露营批发部</h1>
+      <p class="banner-sub">走过路过不要错过 · 量大从优</p>
+      <p class="banner-note">全场累计 10 件 9 折 · 20 件 8.5 折</p>
+    </div>
+  </header>
+
+  <section class="marquee" aria-label="今日批发广播">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>★ 帐篷、睡袋、炊具、桌椅、灯具、配件收纳，全场上新批发价！</span>
+        <span>★ 买满 10 件自动 9 折，满 20 件 8.5 折，买得越多越划算！</span>
+        <span>★ 今日开市，概不赊账，现金微信支付宝都收！</span>
+        <span>★ 组队露营来一趟，装备一次配齐，省心又省钱！</span>
+        <span>★ 牛皮纸价签明码标价，童叟无欺，假一赔十！</span>
+        <span>★ 售罄货品明日请早，先到先得，手慢无！</span>
+        <span>★ 老板亲自打包，手写小票存档，售后认票不认人！</span>
+        <span>★ 走过路过不要错过，量大从优，欢迎团购！</span>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <span>★ 帐篷、睡袋、炊具、桌椅、灯具、配件收纳，全场上新批发价！</span>
+        <span>★ 买满 10 件自动 9 折，满 20 件 8.5 折，买得越多越划算！</span>
+        <span>★ 今日开市，概不赊账，现金微信支付宝都收！</span>
+        <span>★ 组队露营来一趟，装备一次配齐，省心又省钱！</span>
+        <span>★ 牛皮纸价签明码标价，童叟无欺，假一赔十！</span>
+        <span>★ 售罄货品明日请早，先到先得，手慢无！</span>
+        <span>★ 老板亲自打包，手写小票存档，售后认票不认人！</span>
+        <span>★ 走过路过不要错过，量大从优，欢迎团购！</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cat-nav" aria-label="商品分类">
+    <div class="cat-nav-inner">
+      <span class="cat-indicator" aria-hidden="true"></span>
+      <button class="cat-btn ripple-target magnetic active" type="button" data-category="全部">全部摊位</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="帐篷">帐篷</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="睡袋">睡袋</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="炊具">炊具</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="桌椅">桌椅</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="灯具">灯具</button>
+      <button class="cat-btn ripple-target magnetic" type="button" data-category="配件收纳">配件收纳</button>
+    </div>
+  </nav>
+
+  <main class="store container">
+    <div class="store-heading">
+      <h2>今日货架</h2>
+      <p>牛皮纸价签 · 童叟无欺</p>
+    </div>
+    <section id="goodsGrid" class="goods-grid" aria-live="polite">
+      <div class="grid-state">
+        <p class="grid-state-hand">老板正在清点货品…</p>
+      </div>
+    </section>
+
+    <section class="store-extra" aria-label="档口更多内容">
+      <div class="extra-block">
+        <div class="section-head">
+          <h2>摊主配好的三套</h2>
+          <p>不会挑？照单拿，省得算</p>
+        </div>
+        <div class="pack-grid">
+          <article class="pack-card">
+            <span class="pack-flag">两人够用</span>
+            <h3>新手开荒套装</h3>
+            <p class="pack-sub">第一次露营，装车就能走</p>
+            <ul class="pack-list">
+              <li><span>速开双层自动帐篷</span><b>× 1</b></li>
+              <li><span>加厚保暖睡袋</span><b>× 2</b></li>
+              <li><span>露营 LED 灯串</span><b>× 1</b></li>
+            </ul>
+            <div class="pack-price">
+              <span class="pack-old">挂牌 ¥366</span>
+              <strong>¥329</strong>
+              <span class="pack-save">省 37</span>
+            </div>
+          </article>
+
+          <article class="pack-card">
+            <span class="pack-flag hot">卖得最好</span>
+            <h3>一桌四人套装</h3>
+            <p class="pack-sub">天幕底下一坐，茶饭都齐了</p>
+            <ul class="pack-list">
+              <li><span>六角天幕遮阳帐篷</span><b>× 1</b></li>
+              <li><span>折叠蛋卷桌</span><b>× 1</b></li>
+              <li><span>克米特户外椅</span><b>× 4</b></li>
+              <li><span>卡式炉锅具套装</span><b>× 1</b></li>
+            </ul>
+            <div class="pack-price">
+              <span class="pack-old">挂牌 ¥953</span>
+              <strong>¥839</strong>
+              <span class="pack-save">省 114</span>
+            </div>
+          </article>
+
+          <article class="pack-card">
+            <span class="pack-flag">一家老小</span>
+            <h3>全家露营套装</h3>
+            <p class="pack-sub">两室一厅，孩子也有地方睡</p>
+            <ul class="pack-list">
+              <li><span>大空间家庭帐篷</span><b>× 1</b></li>
+              <li><span>双人拼接睡袋</span><b>× 2</b></li>
+              <li><span>铝合金折叠桌</span><b>× 1</b></li>
+              <li><span>充电式营地灯</span><b>× 2</b></li>
+            </ul>
+            <div class="pack-price">
+              <span class="pack-old">挂牌 ¥924</span>
+              <strong>¥799</strong>
+              <span class="pack-save">省 125</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="extra-block">
+        <div class="section-head">
+          <h2>批发四步</h2>
+          <p>照着走，不绕弯</p>
+        </div>
+        <ol class="step-grid">
+          <li>
+            <span class="step-num">01</span>
+            <h3>挑货</h3>
+            <p>按分类看价签，装备一件件往车里加。</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>凑件</h3>
+            <p>全场累计，睡袋气罐都算数，凑够更划算。</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>折扣</h3>
+            <p>满 10 件 9 折，满 20 件 8.5 折，自动算。</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <h3>出票</h3>
+            <p>开单打小票，单号和明细都留在账本里。</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="section-head compact">
+            <h2>批发须知</h2>
+            <p>老规矩，先讲明白</p>
+          </div>
+          <ul class="notice-list">
+            <li>全场累计满 10 件 9 折，满 20 件 8.5 折，结算自动生效。</li>
+            <li>帐篷、桌椅等大件可预留，收摊前两小时来取即可。</li>
+            <li>小票就是凭证，七日内未拆封可换，气罐等消耗品除外。</li>
+            <li>满 500 元三公里内送到营地门口，太远就自提。</li>
+          </ul>
+        </article>
+
+        <article class="info-card stall-card">
+          <div class="section-head compact">
+            <h2>档口信息</h2>
+            <p>认准红棚子</p>
+          </div>
+          <dl class="stall-list">
+            <div><dt>营业时间</dt><dd>每日 06:00 – 20:00（雨天照常）</dd></div>
+            <div><dt>档口位置</dt><dd>菜市场东门 001 号摊</dd></div>
+            <div><dt>联系电话</dt><dd>138-0000-0001（微信同号）</dd></div>
+            <div><dt>结算方式</dt><dd>现金 / 微信 / 支付宝</dd></div>
+          </dl>
+          <span class="stall-stamp" aria-hidden="true">老摊 · 童叟无欺</span>
+        </article>
+      </div>
+
+      <div class="extra-block">
+        <div class="section-head">
+          <h2>买家留言</h2>
+          <p>回头客都这么说</p>
+        </div>
+        <div class="quote-grid">
+          <blockquote class="quote-card">
+            <p>“帐篷骨架扎实，二十件凑下来是真便宜，比网购踏实。”</p>
+            <footer>老王 · 露营十年</footer>
+          </blockquote>
+          <blockquote class="quote-card">
+            <p>“小票手写感太好玩了，像真在菜市场买了一大车菜。”</p>
+            <footer>阿 May · 周末露营</footer>
+          </blockquote>
+          <blockquote class="quote-card">
+            <p>“一次配齐三十件，老板还搭把手装车，省了不少事。”</p>
+            <footer>大鹏 · 公司团建</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <p class="stall-foot">红棚子每日开市 · 价签手写 · 量大从优 · 本页为演示内容</p>
+    </section>
+  </main>
+
+  <button id="historyBtn" class="history-btn ripple-target magnetic" type="button">历史小票</button>
+
+  <div class="cart-bar" id="cartBar">
+    <div class="cart-inner">
+      <div class="cart-left">
+        <p class="cart-line">
+          <span>已选 <strong id="totalCount">0</strong> 件</span>
+          <span>原价合计 <strong id="rawTotal">¥0.00</strong></span>
+          <span class="cart-pay">折后应付 <strong id="payTotal">¥0.00</strong></span>
+        </p>
+        <p id="tipText" class="cart-tip">还没选货，先逛逛摊位！</p>
+      </div>
+      <button id="checkoutBtn" class="checkout-btn ripple-target magnetic" type="button" disabled>开单打小票</button>
+    </div>
+  </div>
+
+  <div id="historyOverlay" class="history-overlay" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+    <aside class="history-panel">
+      <header class="history-head">
+        <div>
+          <p class="history-kicker">本店存档</p>
+          <h2 id="historyTitle">历史小票簿</h2>
+        </div>
+        <button class="icon-close" id="historyClose" type="button" aria-label="关闭历史小票">×</button>
+      </header>
+      <div id="historyList" class="history-list"></div>
+    </aside>
+  </div>
+
+  <div id="receiptModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="receiptTitle">
+    <div class="modal-backdrop" id="receiptBackdrop"></div>
+    <div class="receipt">
+      <div class="receipt-top">
+        <p class="receipt-shop" id="receiptTitle">露营批发部</p>
+        <p class="receipt-sub">WHOLESALE RECEIPT · 批发小票</p>
+      </div>
+      <div id="receiptBody"></div>
+      <p class="receipt-note">一经售出，概不退换</p>
+      <div class="receipt-stamp" aria-hidden="true">已开单</div>
+      <button class="receipt-close" id="receiptClose" type="button">收好小票 · 继续逛</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/interact.js"></script>
+</body>
+</html>

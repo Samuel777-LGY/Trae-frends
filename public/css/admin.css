@@ -1,0 +1,598 @@
+/* 后台账房专用样式，复用 style.css 的配色与字体变量 */
+
+.admin-body {
+  padding-bottom: 34px;
+  background-attachment: fixed;
+}
+
+.admin-top {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 22px;
+  color: var(--yellow);
+  background: var(--ink);
+  border-bottom: 4px solid var(--red);
+}
+
+.admin-back {
+  flex: none;
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  font-weight: 900;
+  color: var(--yellow);
+  text-decoration: none;
+  border: 2px solid var(--yellow);
+}
+
+.admin-back:hover {
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.admin-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+
+.admin-brand-name {
+  font-family: var(--font-hand);
+  font-size: 1.35rem;
+  white-space: nowrap;
+}
+
+.admin-brand-sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.admin-badge {
+  flex: none;
+  padding: 3px 10px;
+  font-family: var(--font-hand);
+  font-size: 0.98rem;
+  color: var(--red);
+  background: var(--paper-light);
+  border: 3px double var(--red);
+  transform: rotate(-2deg);
+}
+
+.admin-main {
+  padding-top: 20px;
+}
+
+.admin-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--ink);
+}
+
+.admin-kicker {
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 1rem;
+  color: var(--red);
+}
+
+.admin-heading h1 {
+  margin: 2px 0 0;
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.admin-date {
+  margin: 0 0 4px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #6b5c46;
+  text-align: right;
+}
+
+/* 统计卡 */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 22px 0 4px;
+}
+
+.stat-card {
+  padding: 15px 16px 13px;
+  background: var(--kraft);
+  border: 3px solid var(--ink);
+  border-radius: 3px 8px 4px 7px;
+  box-shadow: 4px 4px 0 var(--ink);
+  animation: rise-in 0.5s cubic-bezier(0.2, 0.9, 0.3, 1) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+
+.stat-card.alert {
+  border-color: var(--red);
+  box-shadow: 4px 4px 0 var(--red);
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #6b5c46;
+}
+
+.stat-value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 4px 0 2px;
+  font-size: 2.15rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--red);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-unit {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.stat-foot {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #7a6749;
+}
+
+.stat-foot.up {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.stat-foot.down {
+  color: var(--red);
+  font-weight: 900;
+}
+
+/* 面板与标签页 */
+.admin-panel {
+  margin-top: 22px;
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  overflow-x: auto;
+  background: var(--paper);
+  border-bottom: 3px solid var(--ink);
+  scrollbar-width: none;
+}
+
+.admin-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-tab {
+  flex: none;
+  padding: 8px 18px;
+  font-size: 0.94rem;
+  font-weight: 900;
+  color: var(--ink);
+  background: var(--paper-light);
+  border: 3px solid var(--ink);
+  border-radius: 6px 3px 7px 4px;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.admin-tab:hover {
+  background: var(--yellow);
+}
+
+.admin-tab.active {
+  color: var(--paper-light);
+  background: var(--red);
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.tab-pane {
+  display: none;
+  padding: 18px;
+}
+
+.tab-pane.active {
+  display: block;
+  animation: panel-in 0.35s ease both;
+}
+
+/* 订单表 */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.order-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.order-table th {
+  padding: 9px 12px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--paper-light);
+  background: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.order-table td {
+  padding: 11px 12px;
+  font-size: 0.84rem;
+  border-bottom: 2px solid rgba(26, 26, 26, 0.18);
+}
+
+.order-table tbody tr {
+  animation: rise-in 0.4s ease both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+  transition: background 0.15s ease, translate 0.15s ease;
+}
+
+.order-table tbody tr:hover {
+  background: #f6e7c8;
+  translate: 3px 0;
+}
+
+.order-id,
+.order-time {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.order-pay {
+  font-weight: 900;
+  color: var(--red);
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.status-done {
+  color: #3f6b32;
+  background: #e7f0df;
+}
+
+.status-ship {
+  color: #7a5a00;
+  background: var(--yellow);
+}
+
+.status-pack {
+  color: var(--red);
+  background: #fbe3e3;
+}
+
+/* 库存看板 */
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.stock-card {
+  padding: 13px 14px;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 3px 7px 4px 6px;
+  box-shadow: 3px 3px 0 var(--ink);
+  animation: rise-in 0.4s ease both;
+  animation-delay: calc(var(--i, 0) * 55ms);
+}
+
+.stock-card.low {
+  border-color: var(--red);
+  box-shadow: 3px 3px 0 var(--red);
+}
+
+.stock-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stock-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.stock-cat {
+  margin: 2px 0 0;
+  font-size: 0.7rem;
+  color: #6b5c46;
+}
+
+.stock-count {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.stock-bar {
+  height: 14px;
+  margin-top: 9px;
+  overflow: hidden;
+  background: #e8dcc4;
+  border: 2px solid var(--ink);
+}
+
+.stock-bar span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--red);
+  transition: width 0.75s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.stock-card.low .stock-bar span {
+  background: var(--red);
+}
+
+.stock-flag {
+  display: inline-block;
+  margin-top: 7px;
+  padding: 1px 7px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: var(--red);
+  border: 2px solid var(--red);
+  transform: rotate(-2deg);
+}
+
+/* 营收概况 */
+.revenue-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 26px;
+}
+
+.chart-title {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.chart-title::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 5px;
+  margin-top: 4px;
+  background: var(--red);
+}
+
+.revenue-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 230px;
+  padding: 14px 10px 0;
+  border-left: 3px solid var(--ink);
+  border-bottom: 3px solid var(--ink);
+}
+
+.revenue-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  height: 100%;
+  min-width: 0;
+}
+
+.revenue-bar {
+  width: 100%;
+  max-width: 46px;
+  height: 0;
+  background: var(--red);
+  border: 2px solid var(--ink);
+  transition: height 0.85s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.revenue-col.today .revenue-bar {
+  background: var(--yellow);
+}
+
+.revenue-value {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: #6b5c46;
+  white-space: nowrap;
+}
+
+.revenue-day {
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.share-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.share-row {
+  display: grid;
+  grid-template-columns: 68px 1fr 38px;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-label {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.share-bar {
+  height: 16px;
+  overflow: hidden;
+  background: #e8dcc4;
+  border: 2px solid var(--ink);
+}
+
+.share-bar span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--red);
+  transition: width 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.share-percent {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.admin-footer {
+  padding: 28px 16px 6px;
+  font-size: 0.74rem;
+  color: #7a6749;
+  text-align: center;
+}
+
+.admin-footer a {
+  color: var(--red);
+  font-weight: 900;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .revenue-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .admin-top {
+    padding: 9px 12px;
+  }
+
+  .admin-brand-sub {
+    display: none;
+  }
+
+  .admin-brand-name {
+    font-size: 1.12rem;
+  }
+
+  .admin-back {
+    padding: 3px 8px;
+    font-size: 0.74rem;
+  }
+
+  .admin-badge {
+    font-size: 0.8rem;
+  }
+
+  .admin-heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .stat-grid {
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  .stat-card {
+    padding: 12px;
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+
+  .stat-value {
+    font-size: 1.65rem;
+  }
+
+  .tab-pane {
+    padding: 12px;
+  }
+
+  .stock-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-chart {
+    height: 190px;
+    gap: 6px;
+    padding-left: 6px;
+  }
+
+  .revenue-value {
+    display: none;
+  }
+
+  .share-row {
+    grid-template-columns: 58px 1fr 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .order-table tbody tr,
+  .stock-card,
+  .tab-pane.active {
+    animation: none;
+  }
+}

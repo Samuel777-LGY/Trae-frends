@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台账房 · 露营批发部</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+  <header class="admin-top">
+    <a class="admin-back" href="index.html">← 回到摊位</a>
+    <div class="admin-brand">
+      <span class="admin-brand-name">露营批发部</span>
+      <span class="admin-brand-sub">后台账房 · BACK OFFICE</span>
+    </div>
+    <span class="admin-badge">内部重地</span>
+  </header>
+
+  <main class="admin-main container">
+    <section class="admin-heading">
+      <div>
+        <p class="admin-kicker">今日营业 · 模拟数据</p>
+        <h1>账房看板</h1>
+      </div>
+      <p class="admin-date" id="adminDate">--</p>
+    </section>
+
+    <section class="stat-grid">
+      <article class="stat-card" style="--i:0">
+        <p class="stat-label">今日营收</p>
+        <p class="stat-value"><span class="stat-unit">¥</span><span data-count="8462.5" data-decimals="2">0.00</span></p>
+        <p class="stat-foot up">↑ 比昨日多卖 12%</p>
+      </article>
+      <article class="stat-card" style="--i:1">
+        <p class="stat-label">今日订单</p>
+        <p class="stat-value"><span data-count="23">0</span><span class="stat-unit">单</span></p>
+        <p class="stat-foot up">↑ 大单 4 笔</p>
+      </article>
+      <article class="stat-card" style="--i:2">
+        <p class="stat-label">售出件数</p>
+        <p class="stat-value"><span data-count="186">0</span><span class="stat-unit">件</span></p>
+        <p class="stat-foot">平均每单 8.1 件</p>
+      </article>
+      <article class="stat-card alert" style="--i:3">
+        <p class="stat-label">库存预警</p>
+        <p class="stat-value"><span data-count="3">0</span><span class="stat-unit">项</span></p>
+        <p class="stat-foot down">↓ 家庭帐篷仅剩 9 顶</p>
+      </article>
+    </section>
+
+    <section class="admin-panel">
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab active" type="button" data-tab="orders" role="tab">订单流水</button>
+        <button class="admin-tab" type="button" data-tab="stock" role="tab">库存看板</button>
+        <button class="admin-tab" type="button" data-tab="revenue" role="tab">营收概况</button>
+      </div>
+
+      <div class="tab-pane active" id="pane-orders">
+        <div class="table-wrap">
+          <table class="order-table">
+            <thead>
+              <tr>
+                <th>单号</th>
+                <th>时间</th>
+                <th>件数</th>
+                <th>折扣</th>
+                <th>实付</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody id="orderBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="pane-stock">
+        <div class="stock-grid" id="stockGrid"></div>
+      </div>
+
+      <div class="tab-pane" id="pane-revenue">
+        <div class="revenue-layout">
+          <div>
+            <p class="chart-title">近 7 日营收</p>
+            <div class="revenue-chart" id="revenueChart"></div>
+          </div>
+          <div class="revenue-side">
+            <p class="chart-title">分类占比</p>
+            <div class="share-list" id="shareList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="admin-footer">
+    模拟后台 · 数据仅用于演示 · <a href="index.html">返回前台摊位</a>
+  </footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
